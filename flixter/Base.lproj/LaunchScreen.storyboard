@@ -15,19 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-Ct-0Qs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-Ct-0Qs">
                                 <rect key="frame" x="114" y="209" width="186" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="0Wc-p8-84g"/>
+                                    <constraint firstAttribute="height" constant="154" id="O1b-kK-mtm"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-QX-X6W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-QX-X6W">
                                 <rect key="frame" x="150" y="364" width="114" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="RCR-NP-znB"/>
+                                    <constraint firstAttribute="width" constant="114" id="skz-mE-lnz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Rj-Ct-0Qs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="8oi-Eo-5h2"/>
+                            <constraint firstItem="h8V-QX-X6W" firstAttribute="top" secondItem="6Rj-Ct-0Qs" secondAttribute="bottom" constant="1" id="OuT-s5-Qq1"/>
+                            <constraint firstItem="6Rj-Ct-0Qs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="m7X-li-m5e"/>
+                            <constraint firstItem="h8V-QX-X6W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rHW-Io-237"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
