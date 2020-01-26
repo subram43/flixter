@@ -21,7 +21,7 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-<img src="https://recordit.co/r5YYd5c00r" width=250><br>
+<img src="http://g.recordit.co/r5YYd5c00r.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
