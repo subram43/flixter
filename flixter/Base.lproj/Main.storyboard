@@ -118,9 +118,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-dU-3lF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-dU-3lF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="310"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="8ZC-be-ERD"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EW5-E3-cIE">
                                 <rect key="frame" x="11" y="316" width="135" height="186"/>
@@ -142,6 +144,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ddI-dU-3lF" firstAttribute="trailing" secondItem="bz8-oq-6Kc" secondAttribute="trailing" id="0kv-07-b5e"/>
+                            <constraint firstItem="ddI-dU-3lF" firstAttribute="leading" secondItem="bz8-oq-6Kc" secondAttribute="leading" id="8RZ-7E-8dM"/>
+                            <constraint firstItem="ddI-dU-3lF" firstAttribute="top" secondItem="bz8-oq-6Kc" secondAttribute="top" id="Ab1-oS-6R0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bz8-oq-6Kc"/>
                     </view>
                     <navigationItem key="navigationItem" id="6yP-03-oyh"/>
